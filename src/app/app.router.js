@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import AppHome from './components/app-home';
 
 /**
  * 使用插件
@@ -12,6 +13,13 @@ Vue.use(VueRouter);
 const options = {
   mode: 'history',
   base: process.env.BASE_URL,
+  routes: [
+    {
+      name: 'appHome',
+      path: '/',
+      component: AppHome,
+    },
+  ],
 };
 
 /**
