@@ -11,7 +11,7 @@ Vue.use(Vuex);
  */
 const options = {
   state: {
-    appName: 'Ravent',
+    appName: process.env.VUE_APP_NAME,
   },
 };
 
