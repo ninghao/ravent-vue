@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import { APP_NAME } from './app.config';
 
 /**
  * 使用插件
@@ -11,7 +12,7 @@ Vue.use(Vuex);
  */
 const options = {
   state: {
-    appName: process.env.VUE_APP_NAME,
+    appName: APP_NAME,
   },
 };
 
